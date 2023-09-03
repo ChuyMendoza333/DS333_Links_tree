@@ -4,71 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tu Nombre - Linktree</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav id="navbar">
-        <header>Diseño Visual Aplicado</header>
-        <ul>
-            <li><a class="nav-link" href="#Crea_un_balance">Crea un balance</a></li>
-            <li><a class="nav-link" href="#Ajusta_el_ancho">Ajusta el ancho</a></li>
-            <li><a class="nav-link" href="#Ajusta_la_altura">Ajusta la altura</a></li>
-            <li><a class="nav-link" href="#Utiliza_la_etiqueta_strong">Utiliza la etiqueta strong</a></li>
-            <li><a class="nav-link" href="#Utiliza_la_etiqueta_u">Utiliza la etiqueta u</a></li>
+    <div class="sidebar">
+        <ul class="nav-links">
+            <li><a href="#seccion-1">Sección 1</a></li>
+            <li><a href="#seccion-2">Sección 2</a></li>
+            <!-- Agrega más secciones según sea necesario -->
         </ul>
-    </nav>
-    <main id="main-doc">
-        <section class="main-section" id="Crea_un_balance">
-            <header>Crea un balance</header>
-            <article>
-                <p>Esta sección del currículo se enfoca en el Diseño Visual Aplicado. El primer grupo de desafíos se basa en el diseño de la tarjeta provista para mostrar un número de principios fundamentales.</p>
-                <p>El texto es frecuentemente una gran parte del contenido web. CSS tiene múltiples opciones para alinearlo con la propiedad <b>text-align</b>.</p>
-                <ul>
-                    <li>text-align: justify; espacia el texto para que cada línea tenga el mismo ancho.</li>
-                    <li>text-align: center; centra el texto</li>
-                    <li>text-align: right; alinea el texto hacia la derecha</li>
-                    <li>text-align: left; (opción por defecto) alinea el texto hacia la izquierda.</li>
-                </ul>
-            </article>
-            <p>Ejemplo:</p>
-            <code>p{text-align: center;}</code>
+    </div>
+    <main>
+        <section id="seccion-1">
+            <h1>Sección 1</h1>
+            <ul class="links">
+                <li><a href="enlace-1-1">Enlace 1.1</a></li>
+                <li><a href="enlace-1-2">Enlace 1.2</a></li>
+                <!-- Agrega más enlaces para esta sección -->
+            </ul>
         </section>
-        <section class="main-section" id="Ajusta_el_ancho">
-            <header>Ajusta el ancho</header>
-            <article>
-                <p>Puedes especificar el ancho de un elemento con la propiedad width en CSS. Los valores se pueden dar en unidades de longitud relativa (como em, unidades de longitud absoluta (como px, o como un porcentaje de su elemento padre contenedor. El siguiente ejemplo cambia el ancho de una imagen a 220px:</p>
-                <p>Ejemplo:</p>
-                <code>img { width: 220px; }</code>
-            </article>
+        <section id="seccion-2">
+            <h1>Sección 2</h1>
+            <ul class="links">
+                <li><a href="enlace-2-1">Enlace 2.1</a></li>
+                <li><a href="enlace-2-2">Enlace 2.2</a></li>
+                <!-- Agrega más enlaces para esta sección -->
+            </ul>
         </section>
-        <section class="main-section" id="Ajusta_la_altura">
-            <header>Ajusta la altura</header>
-            <article>
-                <p>Puedes especificar la altura de un elemento con la propiedad height en CSS como lo haces con la propiedad width (ancho). En el siguiente ejemplo, se cambia la altura de una imagen a 20px:</p>
-                <p>Ejemplo:</p>
-                <code>img { height: 20px; }</code>
-            </article>
-        </section>
-        <section class="main-section" id="Utiliza_la_etiqueta_strong">
-            <header>Utiliza la etiqueta strong</header>
-            <article>
-                <p>Para poner el texto en negrita, puedes usar la etiqueta strong. Esto se usa a menudo para llamar la atención sobre el texto y simbolizar que es importante. Con la etiqueta strong, el navegador aplica el CSS de font-weight: bold; al elemento.</p>
-                <p>Ejemplo:</p>
-                <code>p { font-weight: bold; }</code>
-            </article>
-        </section>
-        <section class="main-section" id="Utiliza_la_etiqueta_u">
-            <header>Utiliza la etiqueta u</header>
-            <p>
-                Para subrayar texto, puedes usar la etiqueta u. Esto se utiliza a menudo para indicar que una sección del texto es importante, o algo que hay que recordar. Con la etiqueta u, el navegador aplica el CSS de text-decoration: underline; al elemento.
-            </p>
-            <p>Ejemplo:</p>
-            <code>p { text-decoration: underline; }</code>
-        </section>
+        <!-- Agrega más secciones según sea necesario -->
     </main>
     <script src="scripts.js"></script>
 </body>
 </html>
+
 
 
 
