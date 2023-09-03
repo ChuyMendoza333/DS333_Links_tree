@@ -10,6 +10,7 @@ body, ul {
 }
 
 /* Estilos para el header */
+/* Estilos para el header */
 header {
     background-color: #1a2980; /* Color de fondo del encabezado */
     color: white; /* Color del texto */
@@ -17,6 +18,7 @@ header {
     position: relative;
     text-align: center;
 }
+
 /* Estilo para la imagen de fondo repetida */
 header::before {
     content: "";
@@ -37,6 +39,7 @@ header img.logo {
     max-width: 60px; /* Tamaño máximo del logo */
     margin-bottom: 20px; /* Espacio inferior */
 }
+
 
 header nav {
     margin-bottom: 10px;
