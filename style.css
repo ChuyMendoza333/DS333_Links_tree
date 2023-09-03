@@ -4,25 +4,44 @@ body, ul {
     padding: 0;
     list-style: none;
     font-family: Arial, sans-serif;
-}
-
-/* Estilos generales */
-header {
-    background-color: #333;
-    color: #fff;
+    background-image: linear-gradient(to bottom, #1a2980, #26d0ce);
+    color: white;
     text-align: center;
-    padding: 20px;
 }
 
-main {
+/* Estilos del header */
+header {
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+header img {
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+header h1 {
+    margin: 10px 0;
+}
+
+/* Estilos de la imagen de perfil */
+.profile-image {
+    max-width: 200px;
+    border: 5px solid white;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+
+/* Estilos de los enlaces */
 ul.links {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    padding: 20px;
 }
 
 ul.links li {
@@ -43,4 +62,13 @@ a:hover {
     color: #fff;
 }
 
+/* Estilos del footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
 
