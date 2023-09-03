@@ -10,13 +10,21 @@ function copyToClipboard(text) {
     document.body.removeChild(input);
 }
 
-// Event listener para copiar enlaces al hacer clic en ellos
-const links = document.querySelectorAll('ul.links a');
+// Event listener para copiar enlaces al hacer clic en los botones
+const buttons = document.querySelectorAll('.links a');
 
-links.forEach(link => {
-    link.addEventListener('click', function (e) {
+buttons.forEach(button => {
+    button.addEventListener('click', function (e) {
         e.preventDefault();
-        copyToClipboard(this.href);
-        alert('Enlace copiado al portapapeles: ' + this.href);
+        const link = this.getAttribute('href');
+        if (link) {
+            // Redirigir al enlace
+            window.location.href = link;
+        } else {
+            // Copiar al portapapeles si no hay un enlace
+            const buttonText = this.innerText;
+            copyToClipboard(buttonText);
+            alert('Texto copiado al portapapeles: ' + buttonText);
+        }
     });
 });
