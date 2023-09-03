@@ -11,7 +11,7 @@ body, ul {
 
 /* Estilos para el header */
 header {
-    background-color: #1a2980;
+    color: #1a2980;
     background-image: url('images/imagen_2023-08-28_153137776-removebg-preview.png'); /* Ruta de la imagen de fondo */
     background-repeat: repeat;
     padding: 40px;
