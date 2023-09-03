@@ -12,17 +12,19 @@ body, ul {
 /* Estilos para el header */
 header {
     background-image: url('images/imagen_2023-08-28_153137776-removebg-preview.png'); /* Ruta de la imagen de fondo */
-    background-size: 60px; 
-    background-repeat: mosaico; 
+    background-size: cover;
     padding: 40px;
     position: relative;
     text-align: center;
+    color: white;
 }
 
 /* Estilos para el logo */
 header img.logo {
     position: relative;
-    opacity: 0.5; /* Ajusta la opacidad según sea necesario */
+    opacity: 0.7; /* Ajusta la opacidad según sea necesario */
+    max-width: 100px; /* Tamaño máximo del logo */
+    margin-bottom: 20px; /* Espacio inferior */
 }
 
 header nav {
@@ -38,7 +40,7 @@ header nav a {
 
 header h1 {
     margin: 20px 0;
-    color: white;
+    font-size: 28px; /* Tamaño del título */
 }
 
 /* Estilos de la imagen de perfil */
@@ -53,11 +55,12 @@ header h1 {
 @media (max-width: 768px) {
     /* Cambia el estilo del encabezado, logo, y otros elementos aquí */
     header {
-        padding: 10px;
+        padding: 20px;
     }
 
     header img.logo {
-        opacity: 0.3;
+        opacity: 0.5;
+        max-width: 80px; /* Tamaño máximo del logo en pantallas pequeñas */
     }
 
     header h1 {
@@ -67,7 +70,6 @@ header h1 {
     /* Puedes seguir ajustando los estilos para pantallas más pequeñas */
 }
 
-
 /* Estilos para los botones de enlace */
 .links {
     display: grid;
@@ -76,7 +78,7 @@ header h1 {
     padding: 20px;
     text-align: center;
     max-width: 800px;
-    place-items: center;
+    margin: 0 auto; /* Centrar en el medio */
 }
 
 /* Estilos de los botones de enlace */
@@ -87,26 +89,10 @@ header h1 {
     padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    font-weight: bold;
 }
 
 .links a:hover {
-    background-color: #26d0ce;
-}
-@media (max-width: 800px) {
-    .links {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Cambiar el número de columnas */
-    }
-}
-a {
-    text-decoration: none;
-    background-color: #1a2980;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-a:hover {
     background-color: #26d0ce;
 }
 
@@ -118,6 +104,5 @@ footer {
 
 footer p {
     margin: 0;
-    color: #fff;
+    color: white;
 }
-
