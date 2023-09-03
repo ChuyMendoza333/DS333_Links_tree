@@ -11,10 +11,14 @@ body, ul {
 
 /* Estilos para el header */
 header {
-    position: relative;
-    background-color: #1a2980;
-    padding: 20px;
+    background-image: url('images/imagen_2023-08-28_153137776-removebg-preview.png'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Cubrir todo el contenido */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* No repetir la imagen */
+    background-attachment: fixed; /* Fijar la imagen al desplazarse */
+    padding: 50px 0; /* Espaciado interior */
     text-align: center;
+    color: white;
 }
 
 /* Estilos para el logo */
@@ -41,7 +45,7 @@ header nav a {
 }
 
 header h1 {
-    margin: 10px 0;
+    margin: 20px 0;
     color: white;
 }
 
