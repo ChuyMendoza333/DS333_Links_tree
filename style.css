@@ -12,25 +12,17 @@ body, ul {
 /* Estilos para el header */
 header {
     background-image: url('images/imagen_2023-08-28_153137776-removebg-preview.png'); /* Ruta de la imagen de fondo */
-    background-size: cover; /* Cubrir todo el contenido */
-    background-position: center; /* Centrar la imagen */
-    background-repeat: no-repeat; /* No repetir la imagen */
-    background-attachment: fixed; /* Fijar la imagen al desplazarse */
-    padding: 50px 0; /* Espaciado interior */
+    background-size: 60px; 
+    background-repeat: mosaico; 
+    padding: 40px;
+    position: relative;
     text-align: center;
-    color: white;
 }
 
 /* Estilos para el logo */
 header img.logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    position: relative;
     opacity: 0.5; /* Ajusta la opacidad según sea necesario */
-    z-index: -1; /* Coloca la imagen detrás de otros elementos */
 }
 
 header nav {
