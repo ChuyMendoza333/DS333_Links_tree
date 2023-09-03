@@ -50,7 +50,7 @@ header h1 {
 /* Estilos para los botones de enlace */
 .links {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas con igual ancho */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Columnas responsivas */
     gap: 10px;
     padding: 20px;
     text-align: center;
@@ -71,7 +71,11 @@ header h1 {
 .links a:hover {
     background-color: #26d0ce;
 }
-
+@media (max-width: 800px) {
+    .links {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Cambiar el número de columnas */
+    }
+}
 a {
     text-decoration: none;
     background-color: #1a2980;
