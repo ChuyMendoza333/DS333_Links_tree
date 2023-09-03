@@ -11,18 +11,29 @@ body, ul {
 
 /* Estilos para el header */
 header {
-    color: #1a2980;
-    background-image: url('images/imagen_2023-08-28_153137776-removebg-preview.png'); /* Ruta de la imagen de fondo */
-    background-repeat: repeat;
+    background-color: #1a2980; /* Color de fondo del encabezado */
+    color: white; /* Color del texto */
     padding: 40px;
     position: relative;
     text-align: center;
+}
+/* Estilo para la imagen de fondo repetida */
+header::before {
+    content: "";
+    background-image: url('images/imagen_2023-08-28_153137776-removebg-preview.png'); /* Ruta de la imagen de fondo */
+    background-repeat: repeat;
+    opacity: 0.2; /* Ajusta la opacidad según sea necesario */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Coloca la imagen detrás del contenido */
 }
 
 /* Estilos para el logo */
 header img.logo {
     position: relative;
-    opacity: 0.3; /* Ajusta la opacidad según sea necesario */
     max-width: 60px; /* Tamaño máximo del logo */
     margin-bottom: 20px; /* Espacio inferior */
 }
