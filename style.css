@@ -9,13 +9,24 @@ body, ul {
     text-align: center;
 }
 
-/* Estilos del header */
+/* Estilos para el header */
 header {
+    position: relative;
     background-color: #1a2980;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
+}
+
+/* Estilos para el logo */
+header img.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5; /* Ajusta la opacidad según sea necesario */
+    z-index: -1; /* Coloca la imagen detrás de otros elementos */
 }
 
 header nav {
@@ -29,14 +40,9 @@ header nav a {
     font-weight: bold;
 }
 
-header img {
-    max-width: 100px;
-    border-radius: 50%;
-}
-
 header h1 {
     margin: 10px 0;
-    color: white;
+    color: #1a2980;
 }
 
 /* Estilos de la imagen de perfil */
@@ -46,6 +52,25 @@ header h1 {
     border-radius: 50%;
     margin: 10px 0;
 }
+
+/* Media query para ajustar estilos en pantallas más pequeñas */
+@media (max-width: 768px) {
+    /* Cambia el estilo del encabezado, logo, y otros elementos aquí */
+    header {
+        padding: 10px;
+    }
+
+    header img.logo {
+        opacity: 0.3;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    /* Puedes seguir ajustando los estilos para pantallas más pequeñas */
+}
+
 
 /* Estilos para los botones de enlace */
 .links {
