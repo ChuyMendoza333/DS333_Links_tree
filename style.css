@@ -4,18 +4,29 @@ body, ul {
     padding: 0;
     list-style: none;
     font-family: Arial, sans-serif;
-    background-image: linear-gradient(to bottom, #1a2980, #26d0ce);
-    color: white;
+    background-color: #f0f0f0;
+    color: #333;
     text-align: center;
 }
 
 /* Estilos del header */
 header {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #1a2980;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+header nav {
+    margin-bottom: 10px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    font-weight: bold;
 }
 
 header img {
@@ -25,12 +36,13 @@ header img {
 
 header h1 {
     margin: 10px 0;
+    color: #1a2980;
 }
 
 /* Estilos de la imagen de perfil */
 .profile-image {
     max-width: 200px;
-    border: 5px solid white;
+    border: 5px solid #1a2980;
     border-radius: 50%;
     margin: 10px 0;
 }
@@ -60,10 +72,12 @@ a:hover {
 
 /* Estilos del footer */
 footer {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #1a2980;
     padding: 20px;
 }
 
 footer p {
     margin: 0;
+    color: #fff;
 }
+
